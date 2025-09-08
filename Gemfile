@@ -1,8 +1,4 @@
-# frozen_string_literal: true
-
-source "https://rubygems.org"
-
-gemspec
-
-gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
-gem "jekyll-github-metadata", :github => "jekyll/github-metadata"
+gem "jekyll-remote-theme"
+plugins:
+  - jekyll-remote-theme
+remote_theme: http[s]://github.<Enterprise>.com/benbalter/retlab
